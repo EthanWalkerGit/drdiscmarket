@@ -28,7 +28,11 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className='hidden sm:block m-0 w-[200px] h-[80px]'> </div>
+        <div className='flex gap-2 text-lg text-white leading-normal font-ibm-plex-sans-bold-italic font-bold max-lg:hidden lg:mr-24'> 
+          <a href='/'>Sign Up</a>
+          <span>/</span>
+          <a href='/'>Log In</a>
+        </div>
         <div className='hidden max-lg:block pr-10'>
           <IconContext.Provider value={{ color: "white", size: "35px" }}>
             <GiHamburgerMenu />
