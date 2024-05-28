@@ -1,9 +1,9 @@
 import Nav from "./Nav";
 import Search from "./Search";
-import Body from "./Body";
+import Grid from "./Grid";
 
 export {
   Nav,
   Search,
-  Body,
+  Grid,
 }

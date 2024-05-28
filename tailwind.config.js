@@ -15,6 +15,7 @@ export default {
         'header': '#231F20',
         'search': '#FFEF62',
         'button': '#FAFD57',
+        'listing': '#444444',
       },
       screens: {
         "wide": "1440px"
