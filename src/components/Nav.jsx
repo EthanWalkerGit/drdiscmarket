@@ -33,7 +33,7 @@ const Nav = () => {
           <span>/</span>
           <a href='/'>Log In</a>
         </div>
-        <div className='hidden max-lg:block pr-10'>
+        <div className='hidden max-lg:block pr-10 hover:cursor-pointer'>
           <IconContext.Provider value={{ color: "white", size: "35px" }}>
             <GiHamburgerMenu />
           </IconContext.Provider>

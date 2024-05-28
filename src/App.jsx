@@ -1,5 +1,5 @@
-import { Nav, Search, Grid } from "./components";
-import { Footer } from "./sections";
+import { Nav } from "./components";
+import { Search, Grid, Footer } from "./sections";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
     <Grid />
   </section>
   <div className="flex-grow" />
-  <section className="bg-header w-full">
+  <section>
     <Footer />
   </section>
 </main>
