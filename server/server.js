@@ -3,8 +3,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const Album = require('./models/albumModel')
 const app = express()
+const cors = require('cors');
 
 app.use(express.json())
+app.use(cors());
+
+app.use(cors({
+  origin: 'http://localhost:5173'
+}));
 
 app.listen(3000, ()=> {
   console.log("Node App is running on port 3000")
@@ -67,11 +73,11 @@ app.delete('/albums/:id', async(req, res) => {
     const {id} = req.params;
     const album = await Album.findByIdAndDelete(id);
     if(!album){
-      return res.status(404).json({message: 'cannot find product with ID ${id}'})
+      return res.status(404).json({message: `cannot find product with ID ${id}`})
     }
     res.status(200).json(album);
 
-  } catch {
+  } catch (error) {
     res.status(500).json({message: error.message})
   }
 })

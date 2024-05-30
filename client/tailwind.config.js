@@ -22,7 +22,12 @@ export default {
       },
       boxShadow: {
         '2xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
-      }
+      },
+      maxWidth: {
+        'album': '120px',
+        'cardw': '180px',
+        'cardh': '270px',
+      },
     },
   },
   plugins: [],
