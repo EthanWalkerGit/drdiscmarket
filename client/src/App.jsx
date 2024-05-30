@@ -1,5 +1,5 @@
 import { Nav, Footer  } from "./components";
-import { FrontPage, Search, Grid } from "./sections";
+import { FrontPage, Search, Grid, Weekly } from "./sections";
 
 export default function App() {
   return (
@@ -9,6 +9,9 @@ export default function App() {
       </section>
       <section>
         <FrontPage />
+      </section>
+      <section>
+        <Weekly />
       </section>
       <section>
         <Search />

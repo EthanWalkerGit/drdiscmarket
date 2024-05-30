@@ -4,8 +4,8 @@ const FrontPage = () => {
   return (
     <div className="mt-24 flex flex-row justify-center">
       <div className="w-frImageW">
-          <div className="font-poppins text-frSize text-white py-5">
-            <h1>Windsor's One-Stop</h1>
+        <div className="font-poppins text-frSize text-white py-5">
+          <h1>Windsor's One-Stop</h1>
           <h1 className="font-bold text-yellow">Music Source</h1>
         </div>
         <div>

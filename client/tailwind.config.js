@@ -19,8 +19,10 @@ export default {
         'header': '#231F20',
         'search': '#FFEF62',
         'button': '#FAFD57',
-        'listing': '#444444',
+        'listing': '#191A17',
         'yellow': '#ffff00',
+        'gray': '#808080',
+        'dark-gray': '#505050',
       },
       height: {
         'frImageH': '600px',
@@ -28,16 +30,15 @@ export default {
       width: {
         'frImageW': '450px',
         'nav-i-width': '190px',
+        'fullPage': '900px',
+        'gw':'80px',
       },
       screens: {
         "wide": "1440px"
       },
-      boxShadow: {
-        '2xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
-      },
       maxWidth: {
-        'album': '120px',
-        'cardw': '180px',
+        'album': '160px',
+        'cardw': '200px',
         'cardh': '270px',
       },
     },
