@@ -1,9 +1,9 @@
-import Footer from "./Footer";
-import Search from "../sections/Search";
-import Grid from "../sections/Grid";
+import Search from "./Search";
+import Grid from "./Grid";
+import FrontPage from "./FrontPage";
 
 export {
+  FrontPage,
   Search,
   Grid,
-  Footer
 }

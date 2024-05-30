@@ -8,7 +8,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'ibm-plex-sans-bold-italic': ['IBM Plex Sans', 'sans-serif']
+        'poppins': ['Poppins', 'sans-serif'],
+        'merriweather': ['Merriweather', 'serif'],
+      },
+      fontSize: {
+        'frSize': ['5rem', '1.2'],
       },
       colors: {
         'main': '#FEFFC5',
@@ -16,6 +20,14 @@ export default {
         'search': '#FFEF62',
         'button': '#FAFD57',
         'listing': '#444444',
+        'yellow': '#ffff00',
+      },
+      height: {
+        'frImageH': '600px',
+      },
+      width: {
+        'frImageW': '450px',
+        'nav-i-width': '190px',
       },
       screens: {
         "wide": "1440px"
