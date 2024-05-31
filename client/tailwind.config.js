@@ -26,20 +26,22 @@ export default {
       },
       height: {
         'frImageH': '600px',
+        'conImageH': '236px',
+        'cardh': '310px',
       },
       width: {
         'frImageW': '450px',
         'nav-i-width': '190px',
-        'fullPage': '900px',
         'gw':'80px',
+        'album': '160px',
+        'cardw': '200px',
+        'contact': '310px',
       },
       screens: {
         "wide": "1440px"
       },
       maxWidth: {
-        'album': '160px',
-        'cardw': '200px',
-        'cardh': '270px',
+        'fullPage': '900px',
       },
     },
   },

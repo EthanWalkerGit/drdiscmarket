@@ -1,5 +1,5 @@
 import { Nav, Footer  } from "./components";
-import { FrontPage, Search, Grid, Weekly } from "./sections";
+import { ContactFooter, FrontPage, Weekly } from "./sections";
 
 export default function App() {
   return (
@@ -14,14 +14,7 @@ export default function App() {
         <Weekly />
       </section>
       <section>
-        <Search />
-      </section>
-      <section className="mx-auto w-4/5 border-2 border-red-500 border-solid">
-        <Grid />
-      </section>
-      <div className="flex-grow" />
-      <section>
-        <Footer />
+        <ContactFooter />
       </section>
     </main>
   )
