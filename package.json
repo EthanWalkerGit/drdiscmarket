@@ -27,6 +27,7 @@
     "yargs-parser": "^21.1.1"
   },
   "scripts": {
+    "preinstall": "npm i -g @vitejs/plugin-react",
     "dev": "concurrently \"npm run dev --prefix client\" \"npm run db --prefix server\"",
     "build": "npm run build --prefix client",
     "start": "concurrently \"npm run start --prefix server\""
