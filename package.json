@@ -4,6 +4,7 @@
   "description": "React and Tailwind CSS",
   "main": "index.js",
   "dependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
     "ansi-regex": "^5.0.1",
     "cliui": "^8.0.1",
     "color-name": "^1.1.4",
@@ -28,8 +29,8 @@
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix client\" \"npm run db --prefix server\"",
     "build": "npm run build --prefix client",
-    "start": "concurrently \"npm run preview --prefix client\" \"npm run db --prefix server\""
-},
+    "start": "concurrently \"npm run start --prefix server\""
+  },
   "author": "Ethan Walker",
   "license": "MIT"
 }
