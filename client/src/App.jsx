@@ -1,21 +1,24 @@
-import { Nav, Footer  } from "./components";
-import { ContactFooter, FrontPage, Weekly } from "./sections";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+import Shop from './Shop';
 
 export default function App() {
   return (
-    <main className='relative bg-black h-screen w-full flex flex-col justify-between overflow-y-scroll'>
-      <section className="fixed w-full">
-        <Nav />
-      </section>
-      <section>
-        <FrontPage />
-      </section>
-      <section>
-        <Weekly />
-      </section>
-      <section>
-        <ContactFooter />
-      </section>
-    </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Routes>
+        <Route path="/shop" element={<Shop />} />
+      </Routes>
+    </Router>
   )
 }

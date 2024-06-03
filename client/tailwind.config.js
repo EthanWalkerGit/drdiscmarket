@@ -36,6 +36,7 @@ export default {
         'album': '160px',
         'cardw': '200px',
         'contact': '310px',
+        'pageW': '900px',
       },
       screens: {
         "wide": "1440px"

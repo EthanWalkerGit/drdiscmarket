@@ -1,7 +1,7 @@
 import { navLinks } from "../constants";
 import { FiAlignJustify, FiUser, FiShoppingCart, FiSearch } from "react-icons/fi";
 import { IconContext } from "react-icons";
-
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
