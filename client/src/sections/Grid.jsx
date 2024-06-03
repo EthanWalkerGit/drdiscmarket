@@ -15,26 +15,31 @@ function Grid() {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 grid-rows-3 h-full w-full">
-      {albums.map(album => (
-        <div key={album._id} className="flex flex-col bg-black text-white max-w-cardw max-h-cardh m-3 rounded-md">
-          <div className="flex justify-center py-2">
-            <img src={album.cover} alt={album.title} className="max-w-album max-h-album rounded-md" />
-          </div>
-          <div className="pl-3">
-            <h2>{album.name}</h2>
-            <h3>{album.artist}</h3>
-            <p>{album.price}</p>
-            <div className="flex justify-items-start">
-              {album.genres.map((genre, index) => (
-                <p className="pr-1" key={index}>{genre}</p>
-              ))}
+    <div className="mt-24 flex flex-row justify-center">
+      <div className="max-w-fullPage w-full mx-auto">
+        <div className="font-poppins font-bold text-yellow text-4xl">Browse Our Selection</div>
+        <div className="grid gap-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {albums.map(album => (
+            <div key={album._id} className="flex flex-col bg-listing text-white w-cardw h-cardh m-3 border-2 border-gray font-poppins rounded-xl">
+              <div className="flex justify-center px-5 pt-5">
+                <img src={album.cover} alt={album.title} className="max-w-album max-h-album rounded-md" />
+              </div>
+              <div className="pl-5 pt-2">
+                <h2 className="font-merriweather font-bold overflow-ellipsis overflow-hidden whitespace-nowrap">{album.name}</h2>
+                <h3 className="text-md text-gray">{album.artist}</h3>
+                <div className="flex justify-items-start">
+                  {album.genres.map((genre, index) => (
+                    <p className="mr-1 my-1 px-2 min-w-gw font-light text-xs text-gray border-2 border-dark-gray rounded-md" key={index}>{genre}</p>
+                  ))}
+                </div>
+                <p className="mb-2 text-lg font-light">{"$"+album.price}</p>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
-  );
+  )
 }
 
 export default Grid;

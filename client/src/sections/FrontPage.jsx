@@ -1,6 +1,8 @@
 import { frontVinyls } from '../assets/images';
+import { useNavigate } from "react-router-dom";
 
 const FrontPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="mt-24 flex flex-row justify-center">
       <div className="w-frImageW">
@@ -9,8 +11,8 @@ const FrontPage = () => {
           <h1 className="font-bold text-yellow">Music Source</h1>
         </div>
         <div>
-          <button className="h-10 w-32 mr-7 bg-yellow text-black font-merriweather font-bold rounded-md">Shop</button>
-          <button className="h-10 w-32 mr-7 border-2 border-yellow font-merriweather text-yellow rounded-md">About Us</button>
+          <button onClick={() => navigate('/shop')} className="h-10 w-32 mr-7 bg-yellow text-black font-merriweather font-bold rounded-md">Shop</button>
+          <button onClick={() => navigate('/about')} className="h-10 w-32 mr-7 border-2 border-yellow font-merriweather text-yellow rounded-md">About Us</button>
         </div>
       </div>
       <div>
