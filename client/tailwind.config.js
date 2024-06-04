@@ -11,6 +11,7 @@ export default {
         'poppins': ['Poppins', 'sans-serif'],
         'merriweather': ['Merriweather', 'serif'],
       },
+      fontSize: ['hover', 'focus', 'placeholder'],
       fontSize: {
         'frSize': ['5rem', '1.2'],
       },
@@ -23,9 +24,10 @@ export default {
         'yellow': '#ffff00',
         'gray': '#808080',
         'dark-gray': '#505050',
+        'card': '#121210',
       },
       height: {
-        'frImageH': '600px',
+        'frImageH': '575px',
         'conImageH': '236px',
         'cardh': '310px',
       },

@@ -4,6 +4,7 @@ import FrontPage from "./FrontPage";
 import Weekly from "./Weekly";
 import ContactFooter from "./ContactFooter";
 import AboutUs from "./AboutUs";
+import ContactUs from "./ContactUs";
 
 export {
   FrontPage,
@@ -12,4 +13,5 @@ export {
   Weekly,
   ContactFooter,
   AboutUs,
+  ContactUs,
 }
