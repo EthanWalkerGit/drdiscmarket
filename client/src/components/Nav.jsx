@@ -22,10 +22,10 @@ const Nav = () => {
         </ul>
         <div className='hidden lg:block w-nav-i-width pr-12'>
           <IconContext.Provider value={{ color: "white", size: "25px" }}>
-            <ul className="flex flex-row justify-between items-center hover:cursor-pointer">
-              <li><FiSearch /></li> 
-              <li><FiShoppingCart /></li> 
-              <li><FiUser /></li> 
+            <ul className="flex flex-row justify-between items-center">
+              <li className="hover:cursor-pointer"><FiSearch /></li> 
+              <li className="hover:cursor-pointer"><FiShoppingCart /></li> 
+              <li className="hover:cursor-pointer"><FiUser /></li> 
             </ul>
           </IconContext.Provider>
         </div>
