@@ -22,9 +22,9 @@ const ContactUs = () => {
             </ul>
           </div>
 
-          <div className="border-2 border-gray rounded-xl bg-card" style={{ flex: 4.5 }}>
-            <div className="m-6">
-              <h3 className="font-light text-yellow text-4xl mb-5">Give Us a Shout</h3>
+          <div className="h-frImageH border-2 border-gray rounded-xl bg-card" style={{ flex: 4.5 }}>
+            <div className="flex flex-col h-full mx-6">
+              <h3 className="font-light text-yellow text-4xl mb-5 mt-6">Give Us a Shout</h3>
               <div className="font-merriweather">
               <p>Reach out at any time via <span className="text-yellow font-bold">drdiscrecords@hotmail.com</span></p>
                 <ul>
@@ -35,12 +35,12 @@ const ContactUs = () => {
                   <li className="mb-1"><h3>Phone Number</h3></li>
                     <li className="mb-3"><input className="h-10 border-2 border-gray rounded-md bg-card w-full pl-2 text-sm" type="text" placeholder="123-456-7890"/></li>
                   <li className="mb-1"><h3>How can we Help</h3></li>
-                    <li className=""><textarea className="h-20 border-2 border-gray rounded-md bg-card w-full pl-2 pt-1 text-sm" type="text" placeholder="Tell us about your problem..."/></li>
+                    <li className=""><textarea className="h-28 border-2 border-gray rounded-md bg-card w-full pl-2 pt-1 text-sm" type="text" placeholder="Tell us about your problem..."/></li>
                 </ul>
               </div>
-              <div className="text-right">
-                <button className="h-8 w-28 bg-yellow text-black font-merriweather font-bold rounded-full">Submit</button>
-              </div>
+              <div className="flex h-full justify-end items-end">
+                <button className="h-8 w-28 mb-3 bg-yellow text-black font-merriweather font-bold rounded-full">Submit</button>
+            </div>
             </div>
           </div>
         </div>

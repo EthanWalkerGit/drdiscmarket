@@ -28,7 +28,7 @@ export default {
         'cart': '#D9D9D9',
       },
       height: {
-        'frImageH': '550px',
+        'frImageH': '590px',
         'conImageH': '236px',
         'cardh': '340px',
         'albumh': '180px',
