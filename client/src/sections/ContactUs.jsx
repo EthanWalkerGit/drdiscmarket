@@ -29,16 +29,16 @@ const ContactUs = () => {
               <p>Reach out at any time via <span className="text-yellow font-bold">drdiscrecords@hotmail.com</span></p>
                 <ul>
                   <li className="mb-1 mt-4"><h3>First and Last Name</h3></li>
-                    <li className="mb-4"><input className="h-10 border-2 border-gray rounded-md bg-card w-full pl-2 text-sm" type="text" placeholder="Your Name"/></li>
+                    <li className="mb-3"><input className="h-10 border-2 border-gray rounded-md bg-card w-full pl-2 text-sm" type="text" placeholder="Your Name"/></li>
                   <li className="mb-1"><h3>Email</h3></li>
-                    <li className="mb-4"><input className="h-10 border-2 border-gray rounded-md bg-card w-full pl-2 text-sm" type="text" placeholder="you@example.com"/></li>
+                    <li className="mb-3"><input className="h-10 border-2 border-gray rounded-md bg-card w-full pl-2 text-sm" type="text" placeholder="you@example.com"/></li>
                   <li className="mb-1"><h3>Phone Number</h3></li>
-                    <li className="mb-4"><input className="h-10 border-2 border-gray rounded-md bg-card w-full pl-2 text-sm" type="text" placeholder="123-456-7890"/></li>
+                    <li className="mb-3"><input className="h-10 border-2 border-gray rounded-md bg-card w-full pl-2 text-sm" type="text" placeholder="123-456-7890"/></li>
                   <li className="mb-1"><h3>How can we Help</h3></li>
-                    <li className="mb-2"><textarea className="h-20 border-2 border-gray rounded-md bg-card w-full pl-2 pt-1 text-sm" type="text" placeholder="Tell us about your problem..."/></li>
+                    <li className=""><textarea className="h-20 border-2 border-gray rounded-md bg-card w-full pl-2 pt-1 text-sm" type="text" placeholder="Tell us about your problem..."/></li>
                 </ul>
               </div>
-              <div className="text-right ">
+              <div className="text-right">
                 <button className="h-8 w-28 bg-yellow text-black font-merriweather font-bold rounded-full">Submit</button>
               </div>
             </div>
