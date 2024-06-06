@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const FrontPage = () => {
   const navigate = useNavigate();
   return (
-    <div className="mt-24 flex flex-row justify-center mb-7">
+    <div className="mt-20 flex flex-row justify-center mb-7">
       <div className="w-frImageW">
         <div className="font-poppins text-frSize text-white py-8">
           <h1>Windsor's One-Stop</h1>
