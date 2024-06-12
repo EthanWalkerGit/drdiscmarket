@@ -2,8 +2,10 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const Album = require('./models/albumModel')
+const User = require('./models/User')
 const app = express()
 const cors = require('cors');
+const authRoutes = require('./routes/auth');
 
 app.use(express.json())
 app.use(cors());
@@ -15,6 +17,8 @@ app.use(cors({
 app.listen(3000, ()=> {
   console.log("Node App is running on port 3000")
 })
+
+app.use('/api/auth', authRoutes);
 
 //get and show all items in db
 app.get('/albums', async(req, res) => {
